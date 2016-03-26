@@ -58,7 +58,9 @@ class CardCell: UICollectionViewCell {
     
     func remove() {
         UIView.animateWithDuration(
-            1,
+            0.5,
+            delay: 0.8,
+            options: .TransitionNone,
             animations: {
                 self.alpha = 0
             },

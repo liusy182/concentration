@@ -23,6 +23,8 @@ enum Difficulty: CustomStringConvertible {
     }
 }
 
+
+//MARK: setup
 private extension ViewController {
     
     func setup() {
@@ -72,6 +74,7 @@ private extension ViewController {
     }
 }
 
+//MARK: actions
 // note: this is not private since cocoa runtime can only call
 // internal or public methods
 extension ViewController {
