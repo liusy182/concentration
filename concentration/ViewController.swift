@@ -8,36 +8,18 @@
 
 import UIKit
 
-enum Difficulty {
+enum Difficulty: CustomStringConvertible {
     case Easy, Medium, Hard
-}
-
-extension UIColor {
-    //type method (a.k.a statis method)
-    class func greenSea() -> UIColor {
-        return .colorComponents((22, 160, 133))
-    }
     
-    class func emerald() -> UIColor {
-        return  .colorComponents((46, 204, 113))
-    }
-    
-    class func sunflower() -> UIColor {
-        return .colorComponents((241, 196, 15))
-    }
-    
-    class func alizarin() -> UIColor {
-        return  .colorComponents((231, 76, 60))
-    }
-    
-    class func colorComponents(
-        components: (CGFloat, CGFloat, CGFloat)) -> UIColor {
-        
-        return UIColor(
-            red: components.0/255,
-            green: components.1/255,
-            blue: components.2/255,
-            alpha: 1)
+    var description: String {
+        switch self {
+        case .Easy:
+            return "easy"
+        case .Medium:
+            return "medium"
+        case .Hard:
+            return "hard"
+        }
     }
 }
 
@@ -106,14 +88,10 @@ extension ViewController {
     }
     
     func newGameDifficulty(difficulty: Difficulty) {
-        switch difficulty {
-        case .Easy:
-            print("Easy")
-        case .Medium:
-            print("Medium")
-        case .Hard:
-            print("Hard")
-        }
+        print(difficulty)
+        let gameViewController = MemoryViewController(difficulty: difficulty)
+        
+        presentViewController(gameViewController, animated: true, completion: nil)
     }
 }
     
@@ -129,7 +107,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

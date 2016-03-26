@@ -14,6 +14,10 @@
 		43C80BD11CA50B3600D9BF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C80BCF1CA50B3600D9BF8E /* LaunchScreen.storyboard */; };
 		43C80BDC1CA50B3600D9BF8E /* concentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C80BDB1CA50B3600D9BF8E /* concentrationTests.swift */; };
 		43C80BE71CA50B3600D9BF8E /* concentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C80BE61CA50B3600D9BF8E /* concentrationUITests.swift */; };
+		43C80BF51CA53D0B00D9BF8E /* MemoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C80BF41CA53D0B00D9BF8E /* MemoryViewController.swift */; };
+		43C80BF71CA56FA800D9BF8E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C80BF61CA56FA700D9BF8E /* UIColor.swift */; };
+		43C80BF91CA572B200D9BF8E /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C80BF81CA572B200D9BF8E /* Deck.swift */; };
+		43C80BFD1CA5782B00D9BF8E /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C80BFC1CA5782B00D9BF8E /* CardCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		43C80BE21CA50B3600D9BF8E /* concentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = concentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C80BE61CA50B3600D9BF8E /* concentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concentrationUITests.swift; sourceTree = "<group>"; };
 		43C80BE81CA50B3600D9BF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C80BF41CA53D0B00D9BF8E /* MemoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryViewController.swift; sourceTree = "<group>"; };
+		43C80BF61CA56FA700D9BF8E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		43C80BF81CA572B200D9BF8E /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		43C80BFC1CA5782B00D9BF8E /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				43C80BCD1CA50B3600D9BF8E /* Assets.xcassets */,
 				43C80BCF1CA50B3600D9BF8E /* LaunchScreen.storyboard */,
 				43C80BD21CA50B3600D9BF8E /* Info.plist */,
+				43C80BF41CA53D0B00D9BF8E /* MemoryViewController.swift */,
+				43C80BF61CA56FA700D9BF8E /* UIColor.swift */,
+				43C80BF81CA572B200D9BF8E /* Deck.swift */,
+				43C80BFC1CA5782B00D9BF8E /* CardCell.swift */,
 			);
 			path = concentration;
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43C80BF51CA53D0B00D9BF8E /* MemoryViewController.swift in Sources */,
+				43C80BF71CA56FA800D9BF8E /* UIColor.swift in Sources */,
+				43C80BF91CA572B200D9BF8E /* Deck.swift in Sources */,
 				43C80BC91CA50B3600D9BF8E /* ViewController.swift in Sources */,
 				43C80BC71CA50B3600D9BF8E /* AppDelegate.swift in Sources */,
+				43C80BFD1CA5782B00D9BF8E /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +509,7 @@
 				43C80BED1CA50B3600D9BF8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43C80BEE1CA50B3600D9BF8E /* Build configuration list for PBXNativeTarget "concentrationTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +518,7 @@
 				43C80BF01CA50B3600D9BF8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43C80BF11CA50B3600D9BF8E /* Build configuration list for PBXNativeTarget "concentrationUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +527,7 @@
 				43C80BF31CA50B3600D9BF8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
